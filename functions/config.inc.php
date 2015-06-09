@@ -1,15 +1,15 @@
 <?php
 
-  // $hostname = "";
-  // $dbUser = "";
-  // $passwords = "";
-  // $databaseName= "";
+  $hostname = "mysql51-142.perso";
+  $dbUser = "alexandrxedbase";
+  $passwords = "alex1106";
+  $databaseName= "alexandrxedbase";
                 
 
-    $hostname = "localhost";
-    $dbUser = "root";
-    $passwords = "root";
-    $databaseName= "bouya";
+    // $hostname = "localhost";
+    // $dbUser = "root";
+    // $passwords = "root";
+    // $databaseName= "bouya";
                 
     try {
         $db = new PDO("mysql:dbname=$databaseName;host=$hostname", $dbUser, $passwords);

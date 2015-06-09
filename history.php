@@ -117,7 +117,7 @@
                     echo '<button class="actions-box actions-box-two need-to-log">Add watchlist</button>';
                 } else{
 
-                  echo ' <form class="" method="POST" action="documentary.php">
+                  echo ' <form class="" method="POST" action="history.php">
                 <input class="getMovieId" name="value" value="" style="display:none" autocomplete=off>
                 <input class="actions-box actions-box-two submit-movie" type="submit" value="ADD WATCHLIST" name="submit-movie"/>
               </form>';
@@ -128,7 +128,7 @@
 
               ?>
 
-              <a class="actions-box actions-box-three" href="documentary.php">Next movie</a>
+              <a class="actions-box actions-box-three" href="history.php">Next movie</a>
           </div>
           <div class="arrow-scrollable"></div>
         </div>

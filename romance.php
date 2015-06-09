@@ -1,3 +1,18 @@
+<?php session_start(); 
+
+
+  if (empty($_SESSION['username'])) {
+      include "functions/function.inc.php";
+      include "functions/register.inc.php";
+      include "functions/login.inc.php";
+      
+  }else {
+    include "functions/movie.inc.php";
+    };
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,6 +29,38 @@
   </head>
 
   <body>
+
+
+  <div class="login-overlay"></div>
+    <div class="log-midbar"></div>
+    <div class="login-box">
+      <!-- <a class="log-button connect" href="logged.php">Login</a> --><button class="log-button connect">Login</button>
+      <button class="log-button register">Register</button>
+    </div>
+
+     <!-- form pop up -->
+
+
+    <div class="error-box">
+
+        <?php if( isset( $errors['username'] ) ) echo error_mess($errors, 'username'); ?>
+        <?php if(isset($errors['password'])) echo error_mess($errors, 'password'); ?>
+        
+      </div>
+
+    <form method="POST" action="romance.php" class="register-form">
+      <input type="text" name="username" placeholder="username" autocomplete="off" value="<?php if(!empty($_POST['username'])) echo $_POST['username']; ?>"><br>
+      <input type="password" name="password" placeholder="password" autocomplete="off" value="<?php if(!empty($_POST['password'])) echo $_POST['password']; ?>"><br>
+      <input class="submit-form" type='submit' value="GO" name="submit-register"/>
+    </form>
+
+
+    <form method="POST" action="romance.php" class="login-form">
+      <input type="text" name="username" placeholder="username" autocomplete="off" value="jurydwm"><br>
+      <input type="password" name="password" placeholder="password" autocomplete="off" value="jury111215"><br>
+      <input class="submit-form" type='submit' value="GO" name="submit-login"/>
+    </form>
+
     <a class="logo-home-cheat" href="index.php">Switch</a> 
 
     <div class="trailer-overlay-quit"></div>
@@ -64,8 +111,25 @@
           </div>
           <div class="actions-container">
               <button class="actions-box actions-box-one">Already watched</button>
-              <button class="actions-box actions-box-two">Add watchlist</button>
-              <a class="actions-box actions-box-three" data-next-movie href="#">Next movie</a>
+              <?php 
+
+
+                if (empty($_SESSION['username'])) {
+                    echo '<button class="actions-box actions-box-two need-to-log">Add watchlist</button>';
+                } else{
+
+                  echo ' <form class="" method="POST" action="romance.php">
+                <input class="getMovieId" name="value" value="0" style="display:none" autocomplete=off>
+                <input class="actions-box actions-box-two submit-movie" type="submit" value="ADD WATCHLIST" name="submit-movie"/>
+              </form>';
+                };
+
+
+
+
+              ?>
+
+              <a class="actions-box actions-box-three" href="romance.php">Next movie</a>
           </div>
           <div class="arrow-scrollable"></div>
         </div>
@@ -76,6 +140,7 @@
     <script src="js/jquery-asPieProgress.js"></script>
     <script src="js/main.js"></script>
     <script src="js/genre-romance.js"></script>
+    <script src="js/watchlist-get.js"></script>
 
   </body>
 

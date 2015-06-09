@@ -113,6 +113,16 @@ $(document).ready(function () {
       console.log('-- movie info ');
       console.log(data);
 
+      var movieID = data.id;
+      console.log(movieID);
+      var lool = $('.getMovieId').attr('value');
+      lool = movieID;
+
+      console.log(lool);
+
+
+      $('.getMovieId').attr('value',movieID);
+
       
         var date = data.release_date;
         var rate = data.vote_average * 10;
