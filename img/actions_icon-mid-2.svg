@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="33px" height="29px" viewBox="0 0 33 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 125 Copy 3 + Line + Line Copy 5 + Oval 22</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-Copy-4" sketch:type="MSArtboardGroup" transform="translate(-1313.000000, -679.000000)" stroke="#000000">
+            <g id="Path-125-Copy-3-+-Line-+-Line-Copy-5-+-Oval-22" sketch:type="MSLayerGroup" transform="translate(1314.000000, 680.000000)">
+                <path d="M0.471700239,14.3878453 L4.50127301,18.555107 L8.55880976,14.382945" id="Path-125-Copy-3" stroke-width="1.5" sketch:type="MSShapeGroup"></path>
+                <g id="Line-+-Line-Copy-5" transform="translate(13.500000, 9.234513)" stroke-width="1.6" stroke-linecap="square" sketch:type="MSShapeGroup">
+                    <path d="M3.86206897,0.304347826 L3.86206897,7.60869565" id="Line"></path>
+                    <path d="M7.4270557,3.95652174 L0.297082228,3.95652174" id="Line-Copy-3"></path>
+                </g>
+                <path d="M8.22680734,22.3453845 C10.5854451,24.7457797 13.8688664,26.234513 17.5,26.234513 C24.6797017,26.234513 30.5,20.4142147 30.5,13.234513 C30.5,6.05481125 24.6797017,0.234512993 17.5,0.234512993 C10.3202983,0.234512993 4.5,6.05481125 4.5,13.234513" id="Oval-22" stroke-width="1.6" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

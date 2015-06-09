@@ -1,0 +1,23 @@
+// transform
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+          transform: $transform;
+}
+
+// transform origin
+@mixin transform-origin($transform-origin) {
+  -webkit-transform-origin: $transform-origin;
+     -moz-transform-origin: $transform-origin;
+      -ms-transform-origin: $transform-origin;
+          transform-origin: $transform-origin;
+}
+
+// bg cover
+@mixin background-size {
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+      -ms-background-size: cover;
+          background-size: cover;
+}

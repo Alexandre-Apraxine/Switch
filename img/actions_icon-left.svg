@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="27px" viewBox="0 0 34 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
+    <title>black3 2 copy 3 + Line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-Copy-3" sketch:type="MSArtboardGroup" transform="translate(-820.000000, -808.000000)" stroke="#000000" stroke-width="1.2">
+            <g id="black3-2-copy-3-+-Line" sketch:type="MSLayerGroup" transform="translate(821.000000, 809.000000)">
+                <g id="black3-2-copy-3" transform="translate(0.500000, 1.000000)" sketch:type="MSShapeGroup">
+                    <path d="M30.7221644,10.2164868 C30.5935152,10.0274103 27.5260859,5.53882939 23.2930644,2.47070559 C21.0982791,0.877060763 18.3299978,0 15.4997168,0 C12.6709859,0 9.9027045,0.877060763 7.70326931,2.47070559 C3.4702478,5.53882939 0.405918426,10.0274103 0.277269292,10.2164868 C-0.0916282254,10.761472 -0.0916282254,11.4844116 0.277269292,12.0293968 C0.405918426,12.2184733 3.4702478,16.7070542 7.70326931,19.775178 C9.9027045,21.367234 12.6709859,22.2442947 15.4997168,22.2442947 C18.3299978,22.2442947 21.0982791,21.367234 23.2930644,19.7735891 C27.5260859,16.7054653 30.5935152,12.2168844 30.7221644,12.0278079 C31.0926119,11.4844116 31.0926119,10.7598831 30.7221644,10.2164868 L30.7221644,10.2164868 Z M15.4997168,16.683221 C12.502037,16.683221 10.0747533,14.1886823 10.0747533,11.1221474 C10.0747533,8.04925693 12.502037,5.56107368 15.4997168,5.56107368 C18.4911967,5.56107368 20.9246803,8.04925693 20.9246803,11.1221474 C20.9246803,14.1886823 18.4911967,16.683221 15.4997168,16.683221 L15.4997168,16.683221 Z" id="Shape"></path>
+                </g>
+                <path d="M4.24872565,24.251276 L28.2513027,0.24869886" id="Line" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

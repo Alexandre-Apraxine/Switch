@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="27px" viewBox="0 0 16 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-Copy-13" sketch:type="MSArtboardGroup" transform="translate(-695.000000, -867.000000)" fill="#FFFFFF">
+            <path d="M708.887888,893.7981 C708.567088,893.7981 708.246288,893.675602 708.001581,893.431183 L695.36875,880.798064 L708.001869,868.164944 C708.491572,867.675818 709.284781,867.675818 709.774484,868.164944 C710.263898,868.654647 710.263898,869.447856 709.774484,869.937559 L698.913402,880.798064 L709.774195,891.658569 C710.26361,892.148271 710.26361,892.94148 709.774195,893.431183 C709.529488,893.67589 709.208688,893.7981 708.887888,893.7981 L708.887888,893.7981 Z" id="Shape" sketch:type="MSShapeGroup" transform="translate(702.755147, 880.798100) rotate(-180.000000) translate(-702.755147, -880.798100) "></path>
+        </g>
+    </g>
+</svg>

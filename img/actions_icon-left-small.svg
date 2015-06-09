@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="26px" height="21px" viewBox="0 0 26 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
+    <title>black3 2 copy 3 + Line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-Copy-3" sketch:type="MSArtboardGroup" transform="translate(-870.000000, -811.000000)" stroke="#000000" stroke-width="1.2">
+            <g id="black3-2-copy-3-+-Line" sketch:type="MSLayerGroup" transform="translate(870.888393, 811.916667)">
+                <g id="black3-2-copy-3" transform="translate(0.388393, 0.777778)" sketch:type="MSShapeGroup">
+                    <path d="M23.8645384,7.94615639 C23.7646056,7.79909689 21.3818703,4.30797841 18.0937196,1.92165991 C16.3888418,0.682158371 14.2384804,0 12.0399586,0 C9.84264081,0 7.69227939,0.682158371 5.98378955,1.92165991 C2.69563892,4.30797841 0.315311634,7.79909689 0.215378825,7.94615639 C-0.0711754965,8.37003379 -0.0711754965,8.93232012 0.215378825,9.35619752 C0.315311634,9.50325702 2.69563892,12.9943755 5.98378955,15.380694 C7.69227939,16.6189597 9.84264081,17.3011181 12.0399586,17.3011181 C14.2384804,17.3011181 16.3888418,16.6189597 18.0937196,15.3794582 C21.3818703,12.9931397 23.7646056,9.50202123 23.8645384,9.35496172 C24.1522967,8.93232012 24.1522967,8.36879799 23.8645384,7.94615639 L23.8645384,7.94615639 Z M12.0399586,12.9758386 C9.71140375,12.9758386 7.82592447,11.0356418 7.82592447,8.65055906 C7.82592447,6.26053317 9.71140375,4.32527953 12.0399586,4.32527953 C14.3636974,4.32527953 16.2539927,6.26053317 16.2539927,8.65055906 C16.2539927,11.0356418 14.3636974,12.9758386 12.0399586,12.9758386 L12.0399586,12.9758386 Z" id="Shape"></path>
+                </g>
+                <path d="M3.30034939,18.8621036 L21.9452084,0.193432447" id="Line" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

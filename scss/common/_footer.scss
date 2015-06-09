@@ -1,0 +1,66 @@
+.footer{
+  height: 75px;
+  line-height: 75px;
+  .left-section{
+    width: 60%;
+    margin-top: 5px;
+    a{
+      font-size: 19px;
+      font-weight: bold;
+    }
+    span{
+      margin-left: 15px;
+      font-size: 13px;
+      a{
+        font-size: 13px;
+        font-weight: normal;
+        border-bottom: 1px solid $black;
+      }
+      &:before{
+        content: '/';
+        padding-right: 16px;
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
+  .right-section{
+    width: 40%;
+    .btn-two-hor{
+      float: right;
+      margin-top: 13px;
+      .btn-social{
+        width: 28px;
+        height: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        opacity: .2;
+        &:focus{
+          outline: 0;
+        }
+      }
+      .btn-facebook{
+        background: url(../img/facebook-icon.svg);
+        position: relative;
+        &:after{
+          content: '';
+          width: 6px;
+          height: 1px;
+          background: $black;
+          position: absolute;
+          top: 50%;
+          @include transform(translateY(-50%));
+          left: 42px;
+          pointer-events:none;
+        }
+      }
+      .btn-twitter{
+        background: url(../img/twitter-icon.svg);
+      }
+      button:last-child{
+        margin-left: 30px;
+      }
+    }
+  }
+}

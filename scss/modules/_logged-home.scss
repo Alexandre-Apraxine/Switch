@@ -1,0 +1,153 @@
+.logged-content-container{
+  // overflow: hidden;
+  position: relative;
+  // .triangle-logged{
+  //   position: absolute;
+  //   margin-top: -100px;
+  //   top: 0;
+  //   left: 0;
+  //   width: 0;
+  //   height: 0;
+  //   border-style: solid;
+  //   border-width: 0 1500px 1500px 0px;
+  //   border-color: transparent transparent rgba($light-gray, .6) transparent;
+  //   z-index: -1;
+  // }
+  .last-watchlist{
+    margin-top: -250px;
+    position: relative;
+    h2{
+      color: $white;
+      margin-bottom: 51px;
+      &:before{
+        background: $white;
+        width: 25px;
+      }
+    }
+    .poster-one{
+      // background: url(../img/poster-big_fish.png) center no-repeat;
+    }
+    .poster-two{
+      // background: url(../img/poster-lord_of.png);
+    }
+    .poster-three{
+      // background: url(../img/poster-almoust_famous.png);
+    }
+    a{
+      float: right;
+      margin-top: 20px;
+      padding-right: 40px;
+      position: relative;
+      // overflow: hidden;
+      &:before{
+        content: '';
+        background: $almost-black;
+        width: 25px;
+        height: 1px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transition: .2s $ease-in-out-quint;
+      }
+      &:hover:before{
+        right: -10px;
+        transition: .2s $ease-in-out-quint;
+      }
+      // &:before{
+      //   content: 'Watchlist';
+      //   font-weight: bold;
+      //   font-size: 100px;
+      //   text-transform: uppercase;
+      //   color: rgba($almost-black, .05);
+      //   position: absolute;
+      //   right: 0;
+      //   top: 50%;
+      //   pointer-events: none;
+      // }
+    }
+  }
+
+  .last-seen{
+    overflow: hidden;
+    padding-top: 100px;
+    clear: both;
+    h2{
+      color: $almost-black;
+      margin-bottom: 51px;
+      &:before{
+        background: $almost-black;
+        width: 25px;
+      }
+    }
+    .poster-one-seen{
+      background: url(../img/poster-stellar.png);
+    }
+    .poster-two-seen{
+      background: url(../img/poster-confi.png);
+    }
+    .poster-three-seen{
+      background: url(../img/poster-dark.png);
+    }
+    a{
+      float: right;
+      margin-top: 20px;
+      padding-right: 40px;
+      position: relative;
+      &:before{
+        content: '';
+        background: $almost-black;
+        width: 25px;
+        height: 1px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transition: .2s $ease-in-out-quint;
+      }
+      &:hover:before{
+        right: -10px;
+        transition: .2s $ease-in-out-quint;
+      }
+    }
+    .poster-box-btn-container{
+      width: 92px;
+    }
+  }
+
+  .your-list{
+    padding: 100px 0 160px;
+    clear: both;
+    h2{
+      color: $almost-black;
+      margin-bottom: 45px;
+      &:before{
+        background: $almost-black;
+        width: 25px;
+      }
+    }
+    .create-list{
+      float: right;
+      color: $almost-black;
+      border-color: $almost-black;
+      position: relative;
+      &:before{
+        content: '';
+        background: $almost-black;
+        width: 25px;
+        height: 1px;
+        position: absolute;
+        right: 0;
+        bottom: -30px;
+      }
+    }
+  }
+}
+
+// header logged
+
+.header-logged{
+  border-bottom: 3px solid $my-blue;
+}
+
+.header .container-header-logged .header-content{
+  @include transform(translateY(-100px));
+}

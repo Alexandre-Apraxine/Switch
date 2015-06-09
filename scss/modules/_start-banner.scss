@@ -1,0 +1,41 @@
+.get-started{
+  background: url(../img/header-bg.jpg) no-repeat center center fixed;
+  @include background-size;
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  .left-section{
+    @include transform(translateY(0));
+    .btn-two-hor{
+      padding: 142px 0;
+      width: 320px;
+      margin-left: 80px;
+      .quick-try{
+        float: right;
+        display: inline-block;
+        text-align: center;
+      }
+      & button:last-child{
+        float: right;
+      }
+    }
+  }
+  .right-section{
+    width: calc(50% - 120px);
+    margin-left: 120px;
+    .triangle-style{
+      position: absolute;
+      pointer-events: none;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0px 325px 650px;
+      border-color: transparent transparent $my-blue transparent;
+    }
+    h3{
+      margin-top: 140px;   
+    }
+  }
+}

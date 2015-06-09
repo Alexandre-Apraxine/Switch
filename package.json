@@ -1,0 +1,21 @@
+{
+  "name": "TFE",
+  "description": "TFE",
+  "author": "Alexandre Apraxine",
+  "version": "0.0.1",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.11.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-watch": "~0.6.1",
+    "load-grunt-tasks": "~0.4.0",
+    "matchdep": "~0.1.2",
+    "grunt-express": "~1.0.0-beta2",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-open": "~0.2.1"
+  }
+}

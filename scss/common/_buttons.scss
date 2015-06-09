@@ -1,0 +1,313 @@
+.btn{
+  font-family: $font-gotham-med;
+  text-transform: uppercase;
+  color: $white;
+  background: transparent;
+  border: 1px solid $white;
+  cursor: pointer;
+  &:focus{
+    outline: 0;
+  }
+}
+
+.btn-normal{
+  font-size: 12px;
+  padding: 13px 0px; // 34px
+  border-radius: 4px;
+  width: 130px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+  // transition: all 0.2s ease-in-out;
+  // &:hover{
+  //   text-indent: 100%;
+  // }
+  &:hover{
+    border-color: $my-blue;
+  }
+  &:hover .btn-hover{
+    transform: translateX(0);
+  }
+}
+
+.btn-small{
+  font-size: 11px;
+  padding: 10px 0px;
+  border-radius: 3px;
+  width: 100px;
+}
+
+.btn-smaller{
+  font-size: 11px;
+  padding: 8px 12px;
+  border-radius: 2px;
+}
+
+.btn-arrow{
+  width: 30px;
+  height: 30px;
+  background: url(../img/arrow-button.svg);
+  border: none;
+  cursor: pointer;
+  &:focus{
+    outline: 0;
+  }
+}
+
+.btn-burger{
+  width: 22px;
+  height: 16px;
+  background: url(../img/burger-button.svg);
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 10;
+  &:focus{
+    outline: 0;
+  }
+}
+
+.btn-burger-movie{
+  position: fixed;
+}
+
+.browse-cat .login{
+  position: fixed;
+}
+
+.login{
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 60;
+}
+
+.btn-arrow-slide-left{
+  background: url(../img/slide_arrow-left.svg);
+  width: 16px;
+  height: 27px;
+  border: none;
+  cursor: pointer;
+  &:focus{
+    outline: 0;
+  }
+}
+
+.btn-arrow-slide-right{
+  background: url(../img/slide_arrow-right.svg);
+  width: 16px;
+  height: 27px;
+  border: none;
+  cursor: pointer;
+  &:focus{
+    outline: 0;
+  }
+}
+
+.prevBtn{
+  background: url(../img/slide_arrow-left.svg);
+  width: 16px;
+  height: 27px;
+  border: none;
+  cursor: pointer;
+  &:focus{
+    outline: 0;
+  }
+}
+.nextBtn{
+  background: url(../img/slide_arrow-right.svg);
+  width: 16px;
+  height: 27px;
+  border: none;
+  cursor: pointer;
+  &:focus{
+    outline: 0;
+  }
+}
+
+// logged home btn icon
+
+.btn-poster{
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  &:focus{
+    outline: 0;
+  }
+}
+
+.btn-checked{
+  background: url(../img/checked-button.svg) no-repeat center;
+}
+
+.btn-view{
+  background: url(../img/view-button.svg) no-repeat center;
+}
+
+.btn-remove{
+  background: url(../img/remove-button.svg) no-repeat center;
+}
+
+// actions button demo - home page visitor
+
+.btn-action{
+  background: $white;
+  border: 1px solid $semilight-gray;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  position: absolute;
+  font-family: "gotham_medium", sans-serif;
+  cursor: pointer;
+  color: #2A2A2A;
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-top: 30px;
+  &:focus{
+    outline: none;
+  }
+}
+
+.action-watched{
+  left: 0;
+  bottom: 0;
+  @include transform(translate(-50%, 50%));
+  background: $white url(../img/actions_icon-right-8.svg) no-repeat center 20px;
+}
+
+.action-watchlist{
+  left: 50%;
+  bottom: 0;
+  @include transform(translate(-50%, 50%));
+  background: $white url(../img/actions_icon-mid-8.svg) no-repeat center 19px;
+}
+
+.action-next{
+  right: 0;
+  bottom: 0;
+  @include transform(translate(50%, 50%) scale(0));
+  background: $white url(../img/actions_icon-left-8.svg) no-repeat center 20px;
+}
+
+.btn-hover{
+  width: 100%;
+  color: white;
+  height: 100%;
+  text-align: center;
+  font-family: gotham_medium;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: all 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transform: translateX(-200%);
+  z-index: -1;
+  // background: -webkit-linear-gradient(left, rgba(26, 148, 201, 0.25) 0%, rgba(124, 86, 201, 0.25) 50%, rgba(26, 148, 201, 0.25) 100%) repeat;
+  // background: -moz-linear-gradient(left, #1A94C9 0%, #7C56C9 50%, #1A94C9 100%) repeat;
+  // background: -o-linear-gradient(left, #1A94C9 0%, #7C56C9 50%, #1A94C9 100%) repeat;
+  // background: linear-gradient(left, #1A94C9 0%, #7C56C9 50%, #1A94C9 100%) repeat;
+  background-color: #3498db;
+  background-image: -webkit-linear-gradient(-225deg, #3498db, #4f339d);
+  background-image: linear-gradient(-45deg,#3498db, #4f339d);
+  // text-indent: 0;
+  &:after{
+    width: 100%;
+    height: 100%;
+    content: '';
+    left: 100%;
+    position: absolute;
+  //   background: -webkit-linear-gradient(left, rgba(26, 148, 201, 0.25) 0%, rgba(124, 86, 201, 0) 50%, rgba(26, 148, 201, 0) 100%) repeat;
+  // background: -moz-linear-gradient(left, #1A94C9 0%, #7C56C9 50%, #1A94C9 100%) repeat;
+  // background: -o-linear-gradient(left, #1A94C9 0%, #7C56C9 50%, #1A94C9 100%) repeat;
+  // background: linear-gradient(left, #1A94C9 0%, #7C56C9 50%, #1A94C9 100%) repeat;
+    background: -webkit-linear-gradient(-45deg, rgba(37,138,206,1) 0%,rgba(52,152,219,0.94) 27%,rgba(59,155,220,0.92) 34%,rgba(102,175,228,0.09) 77%,rgba(125,185,232,0) 100%);
+  background: -o-linear-gradient(-45deg, rgba(37,138,206,1) 0%,rgba(52,152,219,0.94) 27%,rgba(59,155,220,0.92) 34%,rgba(102,175,228,0.09) 77%,rgba(125,185,232,0) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(37,138,206,1) 0%,rgba(52,152,219,0.94) 27%,rgba(59,155,220,0.92) 34%,rgba(102,175,228,0.09) 77%,rgba(125,185,232,0) 100%);
+  background: linear-gradient(135deg, rgba(37,138,206,1) 0%,rgba(52,152,219,0.94) 27%,rgba(59,155,220,0.92) 34%,rgba(102,175,228,0.09) 77%,rgba(125,185,232,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258ace', endColorstr='#007db9e8',GradientType=1 );
+  }
+}
+
+.logo-home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $white;
+    font-size: 22px;
+    font-family: $font-gotham-med;
+    // font-weight: bold;
+    // letter-spacing: .3px;
+    z-index: 500;
+    padding: 16px 0px 16px 18px;
+  }
+
+.logo-home-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    // width: calc(50% - 18px);
+    color: $white;
+    font-size: 22px;
+    font-family: $font-gotham-med;
+    z-index: 500;
+    opacity: 0;
+    @include transform(translateX(-95px));
+    transition: all .25s cubic-bezier(0,.52,.03,1.37);
+//     background: -moz-linear-gradient(top,  rgba(51,51,51,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,51,51,1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+// background: -webkit-linear-gradient(top,  rgba(51,51,51,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+// background: -o-linear-gradient(top,  rgba(51,51,51,1) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+// background: -ms-linear-gradient(top,  rgba(51,51,51,1) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+// background: linear-gradient(to bottom,  rgba(51,51,51,1) 0%,rgba(0,0,0,0) 100%); /* W3C */
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+
+    padding: 16px 0px 16px 18px;
+}
+
+.logo-home-fixed-slide-hover{
+  opacity: 1;
+  @include transform(translateX(0));
+}
+
+.logo-home-fixed-cat{
+    position: fixed;
+    top: 0;
+    left: 0;
+    // width: calc(50% - 18px);
+    color: $white;
+    font-size: 22px;
+    font-family: $font-gotham-med;
+    z-index: 500;
+//     background: -moz-linear-gradient(top,  rgba(51,51,51,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,51,51,1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+// background: -webkit-linear-gradient(top,  rgba(51,51,51,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+// background: -o-linear-gradient(top,  rgba(51,51,51,1) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+// background: -ms-linear-gradient(top,  rgba(51,51,51,1) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+// background: linear-gradient(to bottom,  rgba(51,51,51,1) 0%,rgba(0,0,0,0) 100%); /* W3C */
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+
+    padding: 16px 0px 16px 18px;
+}
+
+.logo-home-cheat{
+    position: fixed;
+    top: 16px;
+    left: 18px;
+    color: $white;
+    font-size: 22px;
+    font-family: $font-gotham-med;
+    background: black;
+    z-index: 500;
+    display: none;
+  }
+
+
+
+
+
+

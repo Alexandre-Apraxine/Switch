@@ -1,0 +1,52 @@
+.info-actions{
+  overflow: hidden;
+  background: $white;
+  padding: 80px 0 125px;
+  .left-section{
+    .actions-box{
+      width: 270px;
+      height: 352px;
+      border: 1px solid $semilight-gray;
+      border-radius: 3px;
+      // overflow: hidden;
+      background: url(../img/quickactionsbox.png) no-repeat -8px;
+      position: relative;
+      margin: 0 auto;
+      .btn-action{
+        @include transform-origin(center);
+        transition: all .3s cubic-bezier(0,.52,.03,1.37);
+      }
+      .action-next{
+         @include transform(translate(50%, 50%) scale(0));
+         transition-delay: .7s;
+      }
+      .btn-scale-next-waypoints{
+        @include transform(translate(50%, 50%) scale(1));
+      }
+      .action-watchlist{
+         @include transform(translate(-50%, 50%) scale(0));
+         transition-delay: .55s;
+      }
+      .action-watched{
+         @include transform(translate(-50%, 50%) scale(0));
+         transition-delay: .4s;
+      }
+      .btn-scale-watchedlist-waypoints{
+        @include transform(translate(-50%, 50%) scale(1));
+      }
+    }
+  }
+  .right-section{
+    width: calc(50% - 68px);
+    margin-top: 80px;
+    margin-left: 68px;
+  @include transform(translateX(50px));
+    transition: all .6s cubic-bezier(.17,.5,.39,1);
+    transition-delay: .25s;
+    opacity: 0;
+  }
+    .waypoints-slide-right-to-left{
+    @include transform(translateX(0px));
+    opacity: 1;
+  } 
+}

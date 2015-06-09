@@ -1,0 +1,72 @@
+.register-form, .login-form{
+  position: fixed;
+  z-index: 500;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  @include transform(translate(-50%, -95%));
+  width: 160px;
+  transition: all .25s cubic-bezier(0,.52,.03,1.37);
+  pointer-events:none;
+  input{
+    width: calc(100% - 24px);
+    border: 1px solid rgba($white, .7);
+    border-radius: 3px;
+    margin: 10px 0;
+    padding: 12px 12px 13px 12px;
+    background: transparent;
+    cursor: pointer;
+    color: $white;
+    font-size: 14px;
+    font-family: $font-gotham-med;
+    text-align: center;
+    &:hover{
+      border: 1px solid rgba($white, 1);
+    }
+    &:focus{
+      outline: 0;
+      border: 1px solid rgba($white, 1);
+      cursor: initial;
+      color: $white;
+    }
+    // &:-webkit-autofill {
+    //   -webkit-box-shadow: 0 0 0px 1000px red inset;
+    // }
+    &:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+  }
+  .submit-form{
+    display: block;
+    margin: 10px auto 0;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+    font-family: $font-gotham-med;
+    opacity: .8;
+    transition: all .2s ease-in-out;
+    &:focus{
+      outline: 0;
+    }
+    &:hover{
+      opacity: 1;
+      border: none;
+    }
+  }
+}
+
+.form-slide{
+  opacity: 1;
+  @include transform(translate(-50%, -50%));
+  pointer-events:auto;
+}
+
+.popular-slide, .genre-slide, .similar-body .register-form, .similar-body .login-form{
+  input{
+    width: 100%;
+  }
+}

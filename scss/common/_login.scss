@@ -1,0 +1,158 @@
+.login-overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 62;
+  background: rgba(0,0,0,.95);
+  pointer-events: none;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  cursor: url(../img/cursor-cross.svg), auto;
+  left: 0;
+  top: 0;
+}
+
+.opacity-hide{
+  background: rgba(0,0,0,.95);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.login-box{
+  position: fixed;
+  z-index: 65;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  -webkit-transform: translate(calc(-50% + 15px), calc(-50% + 40px));
+  /*cursor: pointer;*/
+  opacity: 0;
+  transition: all .25s cubic-bezier(0,.52,.03,1.37);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.login-box-slide{
+  opacity: 1;
+  -webkit-transform: translate(calc(-50% + 15px), -50%);
+  pointer-events: auto;
+}
+
+.log-button{
+  text-transform: uppercase;
+  font-family: 'gotham_book';
+  border: none;
+  color: rgba(255,255,255,.8);
+  background: none;
+  font-size: 16px;
+  padding: 0 18px;
+  line-height: 60px;
+  cursor: pointer;
+  display: inline-block;
+  &:focus{
+    outline: none;
+  }
+}
+  .log-button:hover{
+    color: rgba(255,255,255,1);
+  }
+  .connect{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transition: all .5s cubic-bezier(0,.52,.03,1.37);
+    pointer-events: none;
+  }
+    .connect:before{
+      content: '';
+      position: fixed;
+      height: 1px;
+      width: 30px;
+      right: 70px;
+      bottom: 17px;
+      background: white;
+      opacity: 0;
+      transition: all .25s ease-in-out;
+    }
+    .connect-slide{
+      -webkit-transform: translateX(-280px);
+      transition: all .25s cubic-bezier(0,.52,.03,1.37);
+      color: rgba(255,255,255,1);
+      /*pointer-events:none;*/
+      cursor: default;
+    }
+    .connect-before:before{
+      content: '';
+      position: fixed;
+      height: 1px;
+      width: 30px;
+      right: 40px;
+      bottom: 17px;
+      opacity: 1;
+      background: white;
+    }
+  .register{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transition: all .5s cubic-bezier(0,.52,.03,1.37);
+    pointer-events: none;
+  }
+    .register:before{
+      content: '';
+      position: fixed;
+      height: 1px;
+      width: 30px;
+      left: 100px;
+      bottom: 17px;
+      background: white;
+      opacity: 0;
+      transition: all .25s ease-in-out;
+    }
+    .register-slide{
+      -webkit-transform: translateX(300px);
+      transition: all .25s cubic-bezier(0,.52,.03,1.37);
+      color: rgba(255,255,255,1);
+      /*pointer-events:none;*/
+      cursor: default;
+    }
+    .register-before:before{
+      content: '';
+      position: fixed;
+      height: 1px;
+      width: 30px;
+      left: 70px;
+      bottom: 17px;
+      opacity: 1;
+      background: white;
+    }
+  
+
+.log-midbar{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, calc(-50% - 40px));
+  z-index: 65;
+  width: 1px;
+  height: 60px;
+  background: white;
+  opacity: 0;
+  transition: all .25s cubic-bezier(0,.52,.03,1.37);
+  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+  // backface-visibility: hidden;
+}
+
+.log-midbar-slide{
+  opacity: .5;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.login-box-button-pointer{
+  pointer-events: auto;
+}
+
+.connect-register-slideoff{
+      opacity: 0;
+      -webkit-transform: translateY(40px);
+      pointer-events: none;
+    }
