@@ -52,6 +52,7 @@ WHERE  id = 3
     $resulttt = json_encode($query);
 
 
+// get last row movie // provisoire (le temps de pouvoir recuperer les 3 derniers pour afficher sur la page home)
 // $query = $db->query("SELECT   apid 
 // FROM      movies
 // ORDER BY  id DESC
