@@ -22,45 +22,70 @@
 
 include "config.inc.php";
 
-    $query = $db->query("SELECT   apid 
+
+// get row 1,2,3
+
+//     $query = $db->query("SELECT   apid 
+// FROM      movies
+// WHERE  id = 1
+// ");
+//     $query = $query->fetchAll();
+//     $query = $query[0][0];
+//     // echo json_encode($query);
+//     $result = json_encode($query);
+
+
+//     $query = $db->query("SELECT   apid 
+// FROM      movies
+// WHERE  id = 2
+// ");
+//     $query = $query->fetchAll();
+//     $query = $query[0][0];
+//     // echo json_encode($query);
+//     $resultt = json_encode($query);
+
+
+//     $query = $db->query("SELECT   apid 
+// FROM      movies
+// WHERE  id = 3
+// ");
+//     $query = $query->fetchAll();
+//     $query = $query[0][0];
+//     // echo json_encode($query);
+//     $resulttt = json_encode($query);
+
+
+
+
+
+
+$query = $db->query("SELECT   apid 
 FROM      movies
-WHERE  id = 1
-");
+ORDER BY  id DESC
+LIMIT     0, 3;");
     $query = $query->fetchAll();
     $query = $query[0][0];
     // echo json_encode($query);
     $result = json_encode($query);
 
-
-    $query = $db->query("SELECT   apid 
+$query = $db->query("SELECT   apid 
 FROM      movies
-WHERE  id = 2
-");
+ORDER BY  id DESC
+LIMIT     1, 3;");
     $query = $query->fetchAll();
     $query = $query[0][0];
     // echo json_encode($query);
     $resultt = json_encode($query);
 
 
-    $query = $db->query("SELECT   apid 
+$query = $db->query("SELECT   apid 
 FROM      movies
-WHERE  id = 3
-");
+ORDER BY  id DESC
+LIMIT     2, 3;");
     $query = $query->fetchAll();
     $query = $query[0][0];
     // echo json_encode($query);
     $resulttt = json_encode($query);
-
-
-// get last row movie // provisoire (le temps de pouvoir recuperer les 3 derniers pour afficher sur la page home)
-// $query = $db->query("SELECT   apid 
-// FROM      movies
-// ORDER BY  id DESC
-// LIMIT     3;");
-//     $query = $query->fetchAll();
-//     $query = $query[0][0];
-//     echo json_encode($query);
-//     $result = json_encode($query);
 
 
 ?>
