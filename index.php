@@ -21,8 +21,8 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/app.css"/>
     <link rel="stylesheet" type="text/css" href="fonts/fonts.css"/>
-    <!-- <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16" /> -->
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
   </head>
 
   <body>
@@ -91,7 +91,7 @@
           <h1>Need a movie ?</h1>
           <p class="first-p-intro">Switch lends you a hand to find the right movie for the right occasion.</p>
           <p>From browsing genre to selections and picks, no way you’re leaving empty handed.</p>
-          <p>Alright ! Let’s get started !</p>
+          <p class="getstartedd">Alright ! Let’s get started !</p>
           <div class="btn-two-hor">
             <a class="btn btn-normal" href="movie.php"><span class="btn-hover"><!-- any movie --></span>Random</a>
             <button class="btn btn-normal browse-transit"><span class="btn-hover"><!-- categories --></span>Browse</button>
@@ -188,12 +188,12 @@
       <div class="container">
         <div class="section left-section">
           <a href="index.php">Switch</a>
-          <span>Created and developed by <a href="http://alexandreapraxine.be/" target="_blank">Alexandre Apraxine</a></span>
+          <span>Created and developed by <a href="https://twitter.com/apraxinealex" target="_blank">Alexandre Apraxine</a></span>
         </div>
         <div class="section right-section">
           <div class="btn-two-hor">
-            <button class="btn-social btn-facebook"></button>
-            <button class="btn-social btn-twitter"></button>
+            <a class="btn-social btn-facebook pop-it-up" href="http://www.facebook.com/share.php?u=<full page url to share" onClick="return fbs_click(575, 400)" target="_blank" title="Share This on Facebook"></a>
+            <a class="btn-social btn-twitter pop-up-twitter" href="http://twitter.com/share?text=Don't know what to watch ? Find the movie you need with Switch !"></a>
           </div>
         </div>
       </div>
@@ -203,6 +203,21 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/waypoints.js"></script>
     <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+function fbs_click(width, height) {
+    var leftPosition, topPosition;
+    //Allow for borders.
+    leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+    //Allow for title and status bars.
+    topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+    var windowFeatures = "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
+    u=location.href;
+    t=document.title;
+    window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer', windowFeatures);
+    return false;
+}
+</script>
 
   </body>
 

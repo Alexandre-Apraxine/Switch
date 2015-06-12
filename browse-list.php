@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Switch - Browse</title>
+    <title>Similar - Switch</title>
     <meta name="viewport" content="initial-scale=1.0,width=device-width">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -22,8 +22,8 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/app.css"/>
     <link rel="stylesheet" type="text/css" href="fonts/fonts.css"/>
-    <!-- <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16" /> -->
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
   </head>
 
   <body class="similar-body">

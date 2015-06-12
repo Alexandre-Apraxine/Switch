@@ -91,6 +91,9 @@ $(document).ready(function () {
       console.log('-- movie info ');
       console.log(data);
 
+      // var watchlist
+
+
       var movieID = data.id;
       console.log(movieID);
       var lool = $('.getMovieId').attr('value');
@@ -100,6 +103,20 @@ $(document).ready(function () {
 
 
       $('.getMovieId').attr('value',movieID);
+
+
+      // var watched
+
+      
+      var movieIDSeen = data.id;
+      console.log(movieIDSeen);
+      var loolSeen = $('.getMovieIdSeen').attr('value');
+      loolSeen = movieID;
+
+      console.log(loolSeen);
+
+
+      $('.getMovieIdSeen').attr('value',movieIDSeen);
 
       
         var date = data.release_date;

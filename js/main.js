@@ -617,5 +617,110 @@ $('.submit-movie').click(function(){
 
 
 
+var yaaaa = 'null';
+
+console.log(yaaaa);
+
+// watchlist display
+
+
+if ( $( ".ptdrr" ).attr('value') == yaaaa ) {
+ 
+    $( ".poster-three-seen" ).css('pointer-events','none');
+    
+ 
+}
+
+if ( $( ".ptdr" ).attr('value') == yaaaa ) {
+ 
+    $( ".poster-two-seen" ).css('pointer-events','none');
+    
+ 
+}
+
+if ( $( ".ptr" ).attr('value') == yaaaa ) {
+ 
+    $( ".poster-one-seen" ).css('pointer-events','none');
+    
+ 
+}
+
+
+if ( $( ".ptdrr" ).attr('value') == yaaaa && $( ".ptdr" ).attr('value') == yaaaa && $( ".ptr" ).attr('value') == yaaaa ) {
+ 
+    // alert('oyé');
+     $( ".poster-one-seen, .poster-two-seen, .poster-three-seen" ).css('display','none');
+     $( ".last-seen .empty-list" ).css('display','block');
+      $( ".last-seen a" ).css('display','none');
+      $( ".your-list" ).css('padding-top','200px');
+    
+    
+ 
+}
+
+// watched display
+
+if ( $( ".lolil" ).attr('value') == yaaaa ) {
+ 
+    $( ".poster-three" ).css('pointer-events','none');
+    
+ 
+}
+
+if ( $( ".lolilo" ).attr('value') == yaaaa ) {
+ 
+    $( ".poster-two" ).css('pointer-events','none');
+    
+ 
+}
+
+if ( $( ".lolilol" ).attr('value') == yaaaa ) {
+ 
+    $( ".poster-one" ).css('pointer-events','none');
+    
+ 
+}
+
+
+if ( $( ".lolilol" ).attr('value') == yaaaa && $( ".lolil" ).attr('value') == yaaaa && $( ".lolilo" ).attr('value') == yaaaa ) {
+ 
+    // alert('oyé');
+     $( ".poster-one, .poster-two, .poster-three" ).css('display','none');
+     $( ".last-watchlist .empty-list" ).css('display','block');
+    $( ".last-watchlist a" ).css('display','none');
+    $( ".logged-content-container .last-seen" ).css('padding-top','200px');
+    
+    
+ 
+}
+
+
+  $('.pop-up-twitter').click(function(event) {
+    var width  = 575,
+        height = 300,
+        left   = ($(window).width()  - width)  / 2,
+        top    = ($(window).height() - height) / 2,
+        url    = this.href,
+        opts   = 'status=1' +
+                 ',width='  + width  +
+                 ',height=' + height +
+                 ',top='    + top    +
+                 ',left='   + left;
+    
+    window.open(url, 'twitter', opts);
+ 
+    return false;
+  });
+
+
+  $('.quick-try').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+ });
+
+
+
+
+
 });
 

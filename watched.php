@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Your Watchlist - Switch</title>
+    <title>Your movies - Switch</title>
     <meta name="viewport" content="initial-scale=1.0,width=device-width">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -29,9 +29,9 @@
   <a class="logo-home" href="index.php">Switch</a>
   
 
-  <input class="watchlist-total" name="watchlist-total" value=<?php echo $totalwatchlist ?> style="display: none"/>
+  <input class="watched-total" name="watched-total" value=<?php echo $totalWatched ?> style="display: none"/>
     <div class="watchlist-list">
-    <h5>Your watchlist</h5>
+    <h5>Seen movies</h5>
 
         
       
@@ -43,7 +43,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/jquery.sudoSlider.min.js"></script>
     <script src="js/slider-similar.js"></script>
-    <script src="js/get-watchlist-all.js"></script>
+    <script src="js/get-watched-all.js"></script>
     <script src="js/main.js"></script>
 
   </body>

@@ -5,13 +5,25 @@
     include "config.inc.php";
 
     $movieID = ($_POST['value']);
+    $username = $_SESSION["username"];
 
-    $db->query("INSERT INTO movies(apid)
-                            VALUES ('$movieID')");
+    $db->query("INSERT INTO watchlist(apid, user)
+                            VALUES ('$movieID','$username')");
 
-    // $SQL = "INSERT INTO chosenitems (ID, Name, Price) VALUES ('', '4-6 Days', '£75.00')";
-
-    // $result = mysql_query($SQL);
 
   }
+
+  if(isset($_POST['submit-movie-seen'])){
+
+    include "config.inc.php";
+
+    $movieID = ($_POST['value']);
+    $username = $_SESSION["username"];
+
+    $db->query("INSERT INTO watched(apid, user)
+                            VALUES ('$movieID','$username')");
+
+
+  }
+  
 ?>

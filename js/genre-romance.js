@@ -89,7 +89,10 @@ $(document).ready(function () {
       console.log('-- movie info ');
       console.log(data);
 
-var movieID = data.id;
+// var watchlist
+
+
+      var movieID = data.id;
       console.log(movieID);
       var lool = $('.getMovieId').attr('value');
       lool = movieID;
@@ -98,6 +101,20 @@ var movieID = data.id;
 
 
       $('.getMovieId').attr('value',movieID);
+
+
+      // var watched
+
+      
+      var movieIDSeen = data.id;
+      console.log(movieIDSeen);
+      var loolSeen = $('.getMovieIdSeen').attr('value');
+      loolSeen = movieID;
+
+      console.log(loolSeen);
+
+
+      $('.getMovieIdSeen').attr('value',movieIDSeen);
       
         var date = data.release_date;
         var rate = data.vote_average * 10;

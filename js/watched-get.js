@@ -10,21 +10,21 @@ $(document).ready(function () {
 
   // var idStorage = '100';
 
-      var bou = $('.lolilol').attr('value');
-      var bout = $('.lolilo').attr('value');
-      var boutt = $('.lolil').attr('value');
+      var tic = $('.ptr').attr('value');
+      var tac = $('.ptdr').attr('value');
+      var tictac = $('.ptdrr').attr('value');
       // console.log(bou);
-      movieWatchlist = bou;
-      movieWatchlistt = bout;
-      movieWatchlisttt = boutt;
+      movieSeenlist = tic;
+      movieSeenlistt = tac;
+      movieSeenlisttt = tictac;
 
-      var totalwatchlistmovies = $('.number-watchlisted').attr('value');
-      console.log(totalwatchlistmovies);
+      var totalseenmovies = $('.number-watched').attr('value');
+      console.log(totalseenmovies);
 
-      $('.total-watchlisted').html(totalwatchlistmovies);
+      $('.total-watched').html(totalseenmovies);
 
       $.ajax({
-      url: baseUrl + 'movie/' + movieWatchlist + keyPrefix + key, // random movie ID
+      url: baseUrl + 'movie/' + movieSeenlist + keyPrefix + key, // random movie ID
       statusCode: {
           404: function() {
             // never blank - 404
@@ -40,14 +40,14 @@ $(document).ready(function () {
 
 
 
-            $('.poster-one, .movie-one').css({'background': 'url(http://image.tmdb.org/t/p/original'+ data.poster_path +') no-repeat center', 'background-size':'cover'});
+            $('.poster-one-seen').css({'background': 'url(http://image.tmdb.org/t/p/original'+ data.poster_path +') no-repeat center', 'background-size':'cover'});
       
 
 
     });
 
     $.ajax({
-      url: baseUrl + 'movie/' + movieWatchlistt + keyPrefix + key, // random movie ID
+      url: baseUrl + 'movie/' + movieSeenlistt + keyPrefix + key, // random movie ID
       statusCode: {
           404: function() {
             // never blank - 404
@@ -63,14 +63,14 @@ $(document).ready(function () {
 
 
 
-            $('.poster-two').css({'background': 'url(http://image.tmdb.org/t/p/original'+ data.poster_path +') no-repeat center', 'background-size':'cover'});
+            $('.poster-two-seen').css({'background': 'url(http://image.tmdb.org/t/p/original'+ data.poster_path +') no-repeat center', 'background-size':'cover'});
       
 
 
     });
 
     $.ajax({
-      url: baseUrl + 'movie/' + movieWatchlisttt + keyPrefix + key, // random movie ID
+      url: baseUrl + 'movie/' + movieSeenlisttt + keyPrefix + key, // random movie ID
       statusCode: {
           404: function() {
             // never blank - 404
@@ -86,7 +86,7 @@ $(document).ready(function () {
 
 
 
-            $('.poster-three').css({'background': 'url(http://image.tmdb.org/t/p/original'+ data.poster_path +') no-repeat center', 'background-size':'cover'});
+            $('.poster-three-seen').css({'background': 'url(http://image.tmdb.org/t/p/original'+ data.poster_path +') no-repeat center', 'background-size':'cover'});
       
 
 

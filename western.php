@@ -24,8 +24,8 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/app.css"/>
     <link rel="stylesheet" type="text/css" href="fonts/fonts.css"/>
-    <!-- <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16" /> -->
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
   </head>
 
   <body>
@@ -109,7 +109,23 @@
             <p></p>
           </div>
           <div class="actions-container">
-              <button class="actions-box actions-box-one">Already watched</button>
+              <?php 
+
+
+                if (empty($_SESSION['username'])) {
+                    echo '<button class="actions-box actions-box-one need-to-log">Already watched</button>';
+                } else{
+
+                  echo ' <form class="" method="POST" action="western.php">
+                <input class="getMovieIdSeen" name="value" value="0" style="display:none" autocomplete=off>
+                <input class="actions-box actions-box-one submit-movie" type="submit" value="Already watched" name="submit-movie-seen"/>
+              </form>';
+                };
+
+
+
+
+              ?>
               <?php 
 
 
@@ -139,7 +155,6 @@
     <script src="js/jquery-asPieProgress.js"></script>
     <script src="js/main.js"></script>
     <script src="js/genre-western.js"></script>
-    <script src="js/watchlist-get.js"></script>
 
   </body>
 
